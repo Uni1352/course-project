@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
+@import "./utils/mixin";
+@import "./utils//variable";
+
+body {
+  font-family: "Comfortaa", "Roboto", serif;
+}
+
+main {
+  height: 100vh;
+  padding: 40px 10vw;
+}
+
+form {
+  @include flex($justify: space-between, $align: center);
+}
+
+input {
+  margin-right: 10px;
+  border: map-get($color, fourth) solid 1px;
+  border-radius: 3px;
+}
+
+a {
+  color: white;
+}
+
+#app {
+  @include flex();
+}
+
+.full-screen {
+  @extend main;
+  @include scrollbar(thin, map-get($color, third), map-get($color, primary));
+
+  width: 100%;
+  padding: 10vh 20vw;
+  background-color: map-get($color, primary);
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  width: 30vw;
+  min-width: 400px;
+  padding: 5vh 3vw;
+  margin: auto;
+  border: map-get($color, fourth) solid 2px;
+  border-radius: 5px;
+  background-color: map-get($color, primary);
+}
+
+.days {
+  font-size: 15px;
+
+  b {
+    font-size: 20px;
+  }
+}
+
+.detail {
+  hr {
+    margin: 5px 0;
+    color: silver;
+  }
+
+  .title {
+    margin-bottom: 30px;
+    color: map-get($color, fourth);
+    text-transform: uppercase;
+  }
+}
+
+.detail__item {
+  @include flex($align: center);
+
+  margin: 10px 0;
+
+  h2 {
+    margin-right: 20px;
+    text-transform: capitalize;
+  }
+}
+
+// input
+input[type="text"] {
+  flex-grow: 7;
+}
+
+input[type="date"] {
+  flex-grow: 2;
+}
+
+#addItem {
+  margin-bottom: 20px;
+}

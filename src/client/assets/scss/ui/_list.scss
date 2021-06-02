@@ -1,0 +1,32 @@
+@import "../utils/mixin";
+@import "../utils/variable";
+
+.list {
+  .list__item--title {
+    background-color: map-get($color, third);
+  }
+}
+.list__item--title {
+  @include flex($justify: space-between, $align: flex-end);
+
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  text-transform: capitalize;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.list__item--details {
+  display: none;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+  border: map-get($color, third) dotted 3px;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+}

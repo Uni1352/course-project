@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+nav {
+  width: 100vw; }
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0; }
+
+button {
+  padding: 10px;
+  border: silver solid 1px;
+  border-radius: 5px;
+  cursor: pointer; }
+  button:hover {
+    background-color: silver; }
+
+a {
+  display: block;
+  text-decoration: none;
+  text-align: center; }
+
+body {
+  font-family: "Comfortaa", "Roboto", serif; }
+
+main, .full-screen {
+  height: 100vh;
+  padding: 40px 10vw; }
+
+form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start; }
+
+input {
+  border: #2b2024 solid 1px;
+  border-radius: 3px; }
+
+a {
+  color: white; }
+
+#app {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+  background-color: #2b2024; }
+
+.full-screen {
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #a80038 #fbf9fa;
+  width: 100%;
+  padding: 10vh 20vw;
+  background-color: #fbf9fa; }
+  .full-screen ::-webkit-scrollbar {
+    width: 5px; }
+  .full-screen ::-webkit-scrollbar-thumb {
+    background-color: #a80038;
+    border-radius: 6px; }
+  .full-screen ::-webkit-scrollbar-track {
+    background-color: #fbf9fa;
+    border-radius: 6px; }
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  width: 30vw;
+  min-width: 400px;
+  padding: 5vh 3vw;
+  margin: auto;
+  border: #2b2024 solid 2px;
+  border-radius: 5px;
+  background-color: #fbf9fa; }
+
+.days {
+  font-size: 15px; }
+  .days b {
+    font-size: 20px; }
+
+.detail hr {
+  margin: 5px 0;
+  color: silver; }
+
+.detail .title {
+  margin-bottom: 30px;
+  color: #2b2024;
+  text-transform: uppercase; }
+
+.detail__item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0; }
+  .detail__item h2 {
+    margin-right: 20px;
+    text-transform: capitalize; }
+
+.list .list__item--title {
+  background-color: #a80038; }
+
+.list__item--title {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  text-transform: capitalize; }
+  .list__item--title:hover {
+    cursor: pointer; }
+
+.list__item--details {
+  display: none;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+  border: #a80038 dotted 3px;
+  border-top: none;
+  border-radius: 0 0 10px 10px; }
+
