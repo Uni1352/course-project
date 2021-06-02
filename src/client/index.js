@@ -65,9 +65,18 @@ function updateEventItem(index) {
   };
 }
 
+function startSocket() {
+  const ws = new WebSocket('ws://localhost:8080/');
+
+  ws.onopen = () => console.log('Connection Opened!');
+  ws.onclose = () => console.log('Connection Closed!');
+}
+
 $(document).ready(function () {
   $('#title').val('');
   $('#deadline').val('');
+
+  startSocket();
 });
 
 // add item
