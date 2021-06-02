@@ -1,24 +1,27 @@
 @import "../utils/mixin";
 @import "../utils/variable";
 
-.list {
-  .list__item--title {
-    background-color: map-get($color, third);
-  }
-}
-.list__item--title {
-  @include flex($justify: space-between, $align: flex-end);
+.list__item {
+  @include flex($justify: space-between, $align: center);
 
-  padding: 20px;
+  padding: 15px;
   margin-bottom: 10px;
+  border-style: dotted;
+  border-width: 3px;
   border-radius: 10px;
-  color: white;
   font-size: 20px;
   text-transform: capitalize;
 
   &:hover {
     cursor: pointer;
   }
+}
+
+.list__item--title {
+  @include flex($justify: space-between);
+
+  flex-grow: 8;
+  margin-right: 20px;
 }
 
 .list__item--details {

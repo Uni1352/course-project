@@ -1,0 +1,8 @@
+@import "../utils/mixin";
+
+.btn {
+  @include flex($justify: space-around);
+
+  width: 100%;
+  margin: 10px 0;
+}
