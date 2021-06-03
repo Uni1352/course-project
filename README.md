@@ -5,6 +5,8 @@
 - a todo list with countdown timer
 - used tools:
   - bundler: webpack
+  - server: NodeJS
+  - database: MongoDB
 
 ## Features
 
