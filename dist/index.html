@@ -8,19 +8,19 @@
   <title>ToDo List</title>
   <link rel="shortcut icon" href="#" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <link href="./assets/css/index.css" rel="stylesheet">
-</head>
+<link href="./assets/css/index.css" rel="stylesheet"></head>
 
 <body>
   <div id="app">
     <main class="full-screen">
-
-      <div class="list">
-      </div>
+      <form id="addItem">
+        <input type="text" id="title" name="eventTitle" placeholder="Enter the title of event">
+        <input type="date" id="deadline" name="eventDate">
+        <button id="submit" type="button">Add</button>
+      </form>
+      <div class="list"></div>
     </main>
   </div>
-
-  <script defer src="index.bundle.js"></script>
-</body>
+<script defer src="index.bundle.js"></script></body>
 
 </html>

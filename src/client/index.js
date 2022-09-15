@@ -6,7 +6,6 @@ function calculateRemainDays(target) {
   const current = new Date();
   const remainDays = parseInt((target - current) / 1000 / 60 / 60 / 24);
 
-
   return remainDays;
 }
 

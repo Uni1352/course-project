@@ -8,7 +8,6 @@ nav {
   width: 100vw; }
 
 input {
-  width: 100%;
   padding: 10px;
   margin: 10px 0; }
 
@@ -34,11 +33,12 @@ main, .full-screen {
 
 form {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-start;
-  align-items: flex-start; }
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center; }
 
 input {
+  margin-right: 10px;
   border: #2b2024 solid 1px;
   border-radius: 3px; }
 
@@ -49,9 +49,7 @@ a {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  align-items: flex-start;
-  height: 100vh;
-  background-color: #2b2024; }
+  align-items: flex-start; }
 
 .full-screen {
   overflow: auto;
@@ -108,22 +106,35 @@ a {
     margin-right: 20px;
     text-transform: capitalize; }
 
-.list .list__item--title {
-  background-color: #a80038; }
+input[type="text"] {
+  flex-grow: 7; }
+
+input[type="date"] {
+  flex-grow: 2; }
+
+#addItem {
+  margin-bottom: 20px; }
+
+.list__item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-style: dotted;
+  border-width: 3px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-transform: capitalize; }
 
 .list__item--title {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: flex-end;
-  padding: 20px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  color: white;
-  font-size: 20px;
-  text-transform: capitalize; }
-  .list__item--title:hover {
-    cursor: pointer; }
+  align-items: flex-start;
+  flex-grow: 8;
+  margin-right: 20px; }
 
 .list__item--details {
   display: none;

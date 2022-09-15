@@ -1,5 +1,6 @@
 {
   "name": "digital-art-course-project",
+  "homepage": "https://github.com/Uni1352/course-project",
   "version": "1.0.0",
   "description": "- a todo list with countdown timer\r - used tools:\r   - bundler: webpack",
   "main": "index.js",
